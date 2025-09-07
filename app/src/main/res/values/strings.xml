@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Civic Snap</string>
+    <string name="create_account">
+        New customer? <font color="#4280EF">Create new account</font>
+    </string>
+    <string name="termsandcondition">By proceeding further, you agree to the
+        <font color="#4280EF">Terms of Use</font> and\n<font color="#4280EF">Privacy Policy.</font>
+    </string>
+    <string name="default_web_client_id">"84770046656-jmt4cut9fp8q3cjpeteirolu9kcqn3lr.apps.googleusercontent.com"</string>
+</resources>

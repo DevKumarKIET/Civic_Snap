@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "84770046656",
+    "project_id": "civic-snap-d4f97",
+    "storage_bucket": "civic-snap-d4f97.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84770046656:android:7dbaba81591492cb45a325",
+        "android_client_info": {
+          "package_name": "com.example.civicsnap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84770046656-ltf6so99976k8gbgnmjdeh1ehjr923ke.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.civicsnap",
+            "certificate_hash": "03acbdcc4319219f5d9724d35bba0661e52e20ef"
+          }
+        },
+        {
+          "client_id": "84770046656-jmt4cut9fp8q3cjpeteirolu9kcqn3lr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZcgRQPMT_ryC6szTdM4ugTrt1Q8pT4oE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84770046656-jmt4cut9fp8q3cjpeteirolu9kcqn3lr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
