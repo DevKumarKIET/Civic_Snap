@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.civicsnap.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.civicsnap.Fragment.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/myReportFragment"
+        android:name="com.example.civicsnap.Fragment.MyReportFragment"
+        android:label="fragment_my_report"
+        tools:layout="@layout/fragment_my_report" />
+    <fragment
+        android:id="@+id/communityFragment"
+        android:name="com.example.civicsnap.Fragment.CommunityFragment"
+        android:label="fragment_community"
+        tools:layout="@layout/fragment_community" />
+</navigation>

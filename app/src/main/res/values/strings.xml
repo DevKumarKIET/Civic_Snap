@@ -7,4 +7,6 @@
         <font color="#4280EF">Terms of Use</font> and\n<font color="#4280EF">Privacy Policy.</font>
     </string>
     <string name="default_web_client_id">"84770046656-jmt4cut9fp8q3cjpeteirolu9kcqn3lr.apps.googleusercontent.com"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

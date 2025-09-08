@@ -33,7 +33,6 @@ class SignInActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var database: DatabaseReference
     private lateinit var googleSignInClient: GoogleSignInClient
-    private lateinit var requestBtnSI: Button
     private lateinit var phoneNumberET: EditText
     private lateinit var number: String
 
@@ -44,9 +43,15 @@ class SignInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        init()
-        requestBtnSI.setOnClickListener {
-            number = phoneNumberET.text.trim().toString()
+
+        //Authentication Initialize
+        auth = FirebaseAuth.getInstance()
+        //Firebase Initialize
+        database = FirebaseDatabase.getInstance().reference
+
+        binding.requestBtnSI.setOnClickListener {
+            Log.d("OTP", "Request OTP button clicked")
+            number = binding.phoneETSI.text.trim().toString()
             if (number.isNotEmpty()) {
                 if (number.length == 10) {
                     number = "+91$number"
@@ -83,14 +88,6 @@ class SignInActivity : AppCompatActivity() {
         }
     }
 
-    private fun init() {
-        requestBtnSI = findViewById(R.id.requestBtnSI)
-        phoneNumberET = findViewById(R.id.phoneETSI)
-        //Authentication Initialize
-        auth = FirebaseAuth.getInstance()
-        //Firebase Initialize
-        database = FirebaseDatabase.getInstance().reference
-    }
     //Launcher class for launching google function
     private val launcher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -123,7 +120,6 @@ class SignInActivity : AppCompatActivity() {
                 }
             }
         }
-
 
     private fun signInWithPhoneAuthCredential(credential: PhoneAuthCredential) {
         auth.signInWithCredential(credential)
