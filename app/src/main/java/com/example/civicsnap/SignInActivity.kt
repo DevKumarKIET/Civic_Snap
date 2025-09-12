@@ -159,6 +159,9 @@ class SignInActivity : AppCompatActivity() {
             // This callback is invoked in an invalid request for verification is made,
             // for instance if the the phone number format is not valid.
 
+            Log.e("PhoneAuth", "Verification failed", e)
+            Toast.makeText(this@SignInActivity, "Verification failed: ${e.message}", Toast.LENGTH_LONG).show()
+
             if (e is FirebaseAuthInvalidCredentialsException) {
                 // Invalid request
                 Log.d("TAG", "onVerificationFailed: ${e.toString()}")
