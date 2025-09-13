@@ -6,7 +6,7 @@ data class ReportData(
     val priority: String,
     val description: String,
     val location: String,
-    val photoUrl: String,
+    val photo_url: String,
     val timestamp: Long,
     val userId: String? = null
 )
